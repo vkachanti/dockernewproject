@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: vkachanti/movies:latest
+    image: vkachanti/paymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: vkachanti/train:latest
+    image: vkachanti/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: vkachanti/dth:latest
+    image: vkachanti/paydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: vkachanti/recharge:latest
+    image: vkachanti/payrecharge:latest
     ports:
       - "84:80"
     deploy:
